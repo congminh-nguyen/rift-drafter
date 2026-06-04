@@ -1,0 +1,968 @@
+{
+  "aatrox": {
+    "damage": "mixed",
+    "tank": false,
+    "healing": true,
+    "hardCC": false,
+    "shield": false
+  },
+  "ahri": {
+    "damage": "AP",
+    "tank": false,
+    "healing": false,
+    "hardCC": false,
+    "shield": false
+  },
+  "akali": {
+    "damage": "AP",
+    "tank": false,
+    "healing": false,
+    "hardCC": false,
+    "shield": false
+  },
+  "akshan": {
+    "damage": "AD",
+    "tank": false,
+    "healing": false,
+    "hardCC": false,
+    "shield": false
+  },
+  "alistar": {
+    "damage": "AD",
+    "tank": true,
+    "healing": false,
+    "hardCC": true,
+    "shield": false
+  },
+  "ambessa": {
+    "damage": "AD",
+    "tank": false,
+    "healing": false,
+    "hardCC": true,
+    "shield": false
+  },
+  "amumu": {
+    "damage": "AP",
+    "tank": true,
+    "healing": false,
+    "hardCC": true,
+    "shield": false
+  },
+  "annie": {
+    "damage": "AP",
+    "tank": false,
+    "healing": false,
+    "hardCC": true,
+    "shield": false
+  },
+  "ashe": {
+    "damage": "AD",
+    "tank": false,
+    "healing": false,
+    "hardCC": true,
+    "shield": false
+  },
+  "aurelion-sol": {
+    "damage": "AP",
+    "tank": false,
+    "healing": false,
+    "hardCC": false,
+    "shield": false
+  },
+  "aurora": {
+    "damage": "AP",
+    "tank": false,
+    "healing": false,
+    "hardCC": false,
+    "shield": false
+  },
+  "bard": {
+    "damage": "AD",
+    "tank": false,
+    "healing": false,
+    "hardCC": false,
+    "shield": false
+  },
+  "blitzcrank": {
+    "damage": "AD",
+    "tank": true,
+    "healing": false,
+    "hardCC": true,
+    "shield": false
+  },
+  "brand": {
+    "damage": "AP",
+    "tank": false,
+    "healing": false,
+    "hardCC": true,
+    "shield": false
+  },
+  "braum": {
+    "damage": "AD",
+    "tank": true,
+    "healing": false,
+    "hardCC": true,
+    "shield": false
+  },
+  "caitlyn": {
+    "damage": "AD",
+    "tank": false,
+    "healing": false,
+    "hardCC": false,
+    "shield": false
+  },
+  "camille": {
+    "damage": "AD",
+    "tank": false,
+    "healing": false,
+    "hardCC": true,
+    "shield": true
+  },
+  "corki": {
+    "damage": "mixed",
+    "tank": false,
+    "healing": false,
+    "hardCC": false,
+    "shield": false
+  },
+  "darius": {
+    "damage": "AD",
+    "tank": false,
+    "healing": true,
+    "hardCC": false,
+    "shield": false
+  },
+  "diana": {
+    "damage": "AP",
+    "tank": false,
+    "healing": false,
+    "hardCC": true,
+    "shield": true
+  },
+  "dr-mundo": {
+    "damage": "AD",
+    "tank": true,
+    "healing": true,
+    "hardCC": false,
+    "shield": false
+  },
+  "draven": {
+    "damage": "AD",
+    "tank": false,
+    "healing": false,
+    "hardCC": false,
+    "shield": false
+  },
+  "ekko": {
+    "damage": "AP",
+    "tank": false,
+    "healing": false,
+    "hardCC": false,
+    "shield": false
+  },
+  "evelynn": {
+    "damage": "AP",
+    "tank": false,
+    "healing": false,
+    "hardCC": false,
+    "shield": false
+  },
+  "ezreal": {
+    "damage": "mixed",
+    "tank": false,
+    "healing": false,
+    "hardCC": false,
+    "shield": false
+  },
+  "fiddlesticks": {
+    "damage": "AP",
+    "tank": false,
+    "healing": false,
+    "hardCC": true,
+    "shield": false
+  },
+  "fiora": {
+    "damage": "AD",
+    "tank": false,
+    "healing": true,
+    "hardCC": false,
+    "shield": false
+  },
+  "fizz": {
+    "damage": "AP",
+    "tank": false,
+    "healing": false,
+    "hardCC": false,
+    "shield": false
+  },
+  "galio": {
+    "damage": "AP",
+    "tank": true,
+    "healing": false,
+    "hardCC": true,
+    "shield": false
+  },
+  "garen": {
+    "damage": "AD",
+    "tank": false,
+    "healing": false,
+    "hardCC": false,
+    "shield": false
+  },
+  "gnar": {
+    "damage": "AD",
+    "tank": false,
+    "healing": false,
+    "hardCC": true,
+    "shield": false
+  },
+  "gragas": {
+    "damage": "AP",
+    "tank": true,
+    "healing": false,
+    "hardCC": true,
+    "shield": false
+  },
+  "graves": {
+    "damage": "AD",
+    "tank": false,
+    "healing": false,
+    "hardCC": false,
+    "shield": false
+  },
+  "gwen": {
+    "damage": "AP",
+    "tank": false,
+    "healing": true,
+    "hardCC": false,
+    "shield": false
+  },
+  "hecarim": {
+    "damage": "AD",
+    "tank": false,
+    "healing": false,
+    "hardCC": true,
+    "shield": false
+  },
+  "heimerdinger": {
+    "damage": "AP",
+    "tank": false,
+    "healing": false,
+    "hardCC": false,
+    "shield": false
+  },
+  "irelia": {
+    "damage": "AD",
+    "tank": false,
+    "healing": false,
+    "hardCC": true,
+    "shield": false
+  },
+  "janna": {
+    "damage": "AD",
+    "tank": false,
+    "healing": false,
+    "hardCC": false,
+    "shield": true
+  },
+  "jarvan-iv": {
+    "damage": "AD",
+    "tank": false,
+    "healing": false,
+    "hardCC": true,
+    "shield": false
+  },
+  "jax": {
+    "damage": "AD",
+    "tank": false,
+    "healing": false,
+    "hardCC": true,
+    "shield": false
+  },
+  "jayce": {
+    "damage": "mixed",
+    "tank": false,
+    "healing": false,
+    "hardCC": false,
+    "shield": false
+  },
+  "jhin": {
+    "damage": "AD",
+    "tank": false,
+    "healing": false,
+    "hardCC": false,
+    "shield": false
+  },
+  "jinx": {
+    "damage": "AD",
+    "tank": false,
+    "healing": false,
+    "hardCC": false,
+    "shield": false
+  },
+  "k-sante": {
+    "damage": "AD",
+    "tank": true,
+    "healing": false,
+    "hardCC": true,
+    "shield": false
+  },
+  "kai-sa": {
+    "damage": "mixed",
+    "tank": false,
+    "healing": false,
+    "hardCC": false,
+    "shield": false
+  },
+  "kalista": {
+    "damage": "AD",
+    "tank": false,
+    "healing": false,
+    "hardCC": false,
+    "shield": false
+  },
+  "karma": {
+    "damage": "AP",
+    "tank": false,
+    "healing": false,
+    "hardCC": false,
+    "shield": true
+  },
+  "kassadin": {
+    "damage": "AP",
+    "tank": false,
+    "healing": false,
+    "hardCC": false,
+    "shield": false
+  },
+  "katarina": {
+    "damage": "AP",
+    "tank": false,
+    "healing": false,
+    "hardCC": false,
+    "shield": false
+  },
+  "kayle": {
+    "damage": "mixed",
+    "tank": false,
+    "healing": false,
+    "hardCC": false,
+    "shield": false
+  },
+  "kayn": {
+    "damage": "AD",
+    "tank": false,
+    "healing": true,
+    "hardCC": false,
+    "shield": false
+  },
+  "kennen": {
+    "damage": "AP",
+    "tank": false,
+    "healing": false,
+    "hardCC": true,
+    "shield": false
+  },
+  "kha-zix": {
+    "damage": "AD",
+    "tank": false,
+    "healing": false,
+    "hardCC": false,
+    "shield": false
+  },
+  "kindred": {
+    "damage": "AD",
+    "tank": false,
+    "healing": false,
+    "hardCC": false,
+    "shield": false
+  },
+  "kog-maw": {
+    "damage": "mixed",
+    "tank": false,
+    "healing": false,
+    "hardCC": false,
+    "shield": false
+  },
+  "lee-sin": {
+    "damage": "AD",
+    "tank": false,
+    "healing": false,
+    "hardCC": false,
+    "shield": false
+  },
+  "leona": {
+    "damage": "AD",
+    "tank": true,
+    "healing": false,
+    "hardCC": true,
+    "shield": false
+  },
+  "lillia": {
+    "damage": "AP",
+    "tank": false,
+    "healing": false,
+    "hardCC": false,
+    "shield": false
+  },
+  "lissandra": {
+    "damage": "AP",
+    "tank": false,
+    "healing": false,
+    "hardCC": true,
+    "shield": false
+  },
+  "lucian": {
+    "damage": "AD",
+    "tank": false,
+    "healing": false,
+    "hardCC": false,
+    "shield": false
+  },
+  "lulu": {
+    "damage": "AP",
+    "tank": false,
+    "healing": false,
+    "hardCC": false,
+    "shield": true
+  },
+  "lux": {
+    "damage": "AP",
+    "tank": false,
+    "healing": false,
+    "hardCC": true,
+    "shield": true
+  },
+  "malphite": {
+    "damage": "AD",
+    "tank": true,
+    "healing": false,
+    "hardCC": true,
+    "shield": false
+  },
+  "maokai": {
+    "damage": "AD",
+    "tank": true,
+    "healing": true,
+    "hardCC": true,
+    "shield": false
+  },
+  "master-yi": {
+    "damage": "AD",
+    "tank": false,
+    "healing": true,
+    "hardCC": false,
+    "shield": false
+  },
+  "mel": {
+    "damage": "AP",
+    "tank": false,
+    "healing": false,
+    "hardCC": false,
+    "shield": false
+  },
+  "milio": {
+    "damage": "AP",
+    "tank": false,
+    "healing": true,
+    "hardCC": false,
+    "shield": true
+  },
+  "miss-fortune": {
+    "damage": "AD",
+    "tank": false,
+    "healing": false,
+    "hardCC": false,
+    "shield": false
+  },
+  "mordekaiser": {
+    "damage": "AP",
+    "tank": false,
+    "healing": false,
+    "hardCC": false,
+    "shield": false
+  },
+  "morgana": {
+    "damage": "AP",
+    "tank": false,
+    "healing": false,
+    "hardCC": true,
+    "shield": true
+  },
+  "nami": {
+    "damage": "AP",
+    "tank": false,
+    "healing": true,
+    "hardCC": true,
+    "shield": false
+  },
+  "nasus": {
+    "damage": "AD",
+    "tank": false,
+    "healing": false,
+    "hardCC": false,
+    "shield": false
+  },
+  "nautilus": {
+    "damage": "AD",
+    "tank": true,
+    "healing": false,
+    "hardCC": true,
+    "shield": false
+  },
+  "nidalee": {
+    "damage": "mixed",
+    "tank": false,
+    "healing": false,
+    "hardCC": false,
+    "shield": false
+  },
+  "nilah": {
+    "damage": "AD",
+    "tank": false,
+    "healing": true,
+    "hardCC": false,
+    "shield": true
+  },
+  "nocturne": {
+    "damage": "AD",
+    "tank": false,
+    "healing": false,
+    "hardCC": true,
+    "shield": false
+  },
+  "norra": {
+    "damage": "AP",
+    "tank": false,
+    "healing": false,
+    "hardCC": false,
+    "shield": false
+  },
+  "nunu-willump": {
+    "damage": "AP",
+    "tank": true,
+    "healing": false,
+    "hardCC": true,
+    "shield": false
+  },
+  "olaf": {
+    "damage": "AD",
+    "tank": false,
+    "healing": true,
+    "hardCC": false,
+    "shield": false
+  },
+  "orianna": {
+    "damage": "AP",
+    "tank": false,
+    "healing": false,
+    "hardCC": false,
+    "shield": true
+  },
+  "ornn": {
+    "damage": "AD",
+    "tank": true,
+    "healing": false,
+    "hardCC": true,
+    "shield": false
+  },
+  "pantheon": {
+    "damage": "AD",
+    "tank": false,
+    "healing": false,
+    "hardCC": true,
+    "shield": false
+  },
+  "poppy": {
+    "damage": "AD",
+    "tank": true,
+    "healing": false,
+    "hardCC": true,
+    "shield": false
+  },
+  "pyke": {
+    "damage": "AD",
+    "tank": false,
+    "healing": false,
+    "hardCC": true,
+    "shield": false
+  },
+  "rakan": {
+    "damage": "AD",
+    "tank": false,
+    "healing": false,
+    "hardCC": true,
+    "shield": false
+  },
+  "rammus": {
+    "damage": "AD",
+    "tank": true,
+    "healing": false,
+    "hardCC": true,
+    "shield": false
+  },
+  "rell": {
+    "damage": "AD",
+    "tank": true,
+    "healing": false,
+    "hardCC": true,
+    "shield": false
+  },
+  "renekton": {
+    "damage": "AD",
+    "tank": false,
+    "healing": true,
+    "hardCC": false,
+    "shield": false
+  },
+  "rengar": {
+    "damage": "AD",
+    "tank": false,
+    "healing": false,
+    "hardCC": false,
+    "shield": false
+  },
+  "riven": {
+    "damage": "AD",
+    "tank": false,
+    "healing": false,
+    "hardCC": true,
+    "shield": true
+  },
+  "rumble": {
+    "damage": "AP",
+    "tank": false,
+    "healing": false,
+    "hardCC": false,
+    "shield": false
+  },
+  "ryze": {
+    "damage": "AP",
+    "tank": false,
+    "healing": true,
+    "hardCC": false,
+    "shield": false
+  },
+  "samira": {
+    "damage": "AD",
+    "tank": false,
+    "healing": false,
+    "hardCC": false,
+    "shield": false
+  },
+  "senna": {
+    "damage": "AD",
+    "tank": false,
+    "healing": true,
+    "hardCC": false,
+    "shield": false
+  },
+  "seraphine": {
+    "damage": "AP",
+    "tank": false,
+    "healing": true,
+    "hardCC": true,
+    "shield": true
+  },
+  "sett": {
+    "damage": "AD",
+    "tank": true,
+    "healing": true,
+    "hardCC": true,
+    "shield": true
+  },
+  "shen": {
+    "damage": "AD",
+    "tank": true,
+    "healing": false,
+    "hardCC": false,
+    "shield": true
+  },
+  "shyvana": {
+    "damage": "mixed",
+    "tank": true,
+    "healing": false,
+    "hardCC": false,
+    "shield": false
+  },
+  "singed": {
+    "damage": "AP",
+    "tank": true,
+    "healing": false,
+    "hardCC": true,
+    "shield": false
+  },
+  "sion": {
+    "damage": "AD",
+    "tank": true,
+    "healing": false,
+    "hardCC": true,
+    "shield": false
+  },
+  "sivir": {
+    "damage": "AD",
+    "tank": false,
+    "healing": false,
+    "hardCC": false,
+    "shield": false
+  },
+  "smolder": {
+    "damage": "AD",
+    "tank": false,
+    "healing": false,
+    "hardCC": false,
+    "shield": false
+  },
+  "sona": {
+    "damage": "AP",
+    "tank": false,
+    "healing": true,
+    "hardCC": true,
+    "shield": true
+  },
+  "soraka": {
+    "damage": "AP",
+    "tank": false,
+    "healing": true,
+    "hardCC": false,
+    "shield": false
+  },
+  "swain": {
+    "damage": "AP",
+    "tank": false,
+    "healing": true,
+    "hardCC": true,
+    "shield": false
+  },
+  "syndra": {
+    "damage": "AP",
+    "tank": false,
+    "healing": false,
+    "hardCC": true,
+    "shield": false
+  },
+  "taliyah": {
+    "damage": "AP",
+    "tank": false,
+    "healing": false,
+    "hardCC": true,
+    "shield": false
+  },
+  "talon": {
+    "damage": "AD",
+    "tank": false,
+    "healing": false,
+    "hardCC": false,
+    "shield": false
+  },
+  "teemo": {
+    "damage": "AP",
+    "tank": false,
+    "healing": false,
+    "hardCC": false,
+    "shield": false
+  },
+  "thresh": {
+    "damage": "AD",
+    "tank": true,
+    "healing": false,
+    "hardCC": true,
+    "shield": false
+  },
+  "tristana": {
+    "damage": "AD",
+    "tank": false,
+    "healing": false,
+    "hardCC": false,
+    "shield": false
+  },
+  "tryndamere": {
+    "damage": "AD",
+    "tank": false,
+    "healing": true,
+    "hardCC": false,
+    "shield": false
+  },
+  "twisted-fate": {
+    "damage": "AP",
+    "tank": false,
+    "healing": false,
+    "hardCC": true,
+    "shield": false
+  },
+  "twitch": {
+    "damage": "AD",
+    "tank": false,
+    "healing": false,
+    "hardCC": false,
+    "shield": false
+  },
+  "urgot": {
+    "damage": "AD",
+    "tank": false,
+    "healing": false,
+    "hardCC": true,
+    "shield": false
+  },
+  "varus": {
+    "damage": "mixed",
+    "tank": false,
+    "healing": false,
+    "hardCC": true,
+    "shield": false
+  },
+  "vayne": {
+    "damage": "AD",
+    "tank": false,
+    "healing": false,
+    "hardCC": false,
+    "shield": false
+  },
+  "veigar": {
+    "damage": "AP",
+    "tank": false,
+    "healing": false,
+    "hardCC": true,
+    "shield": false
+  },
+  "vel-koz": {
+    "damage": "AP",
+    "tank": false,
+    "healing": false,
+    "hardCC": false,
+    "shield": false
+  },
+  "vex": {
+    "damage": "AP",
+    "tank": false,
+    "healing": false,
+    "hardCC": true,
+    "shield": false
+  },
+  "vi": {
+    "damage": "AD",
+    "tank": false,
+    "healing": false,
+    "hardCC": true,
+    "shield": false
+  },
+  "viego": {
+    "damage": "AD",
+    "tank": false,
+    "healing": false,
+    "hardCC": false,
+    "shield": false
+  },
+  "viktor": {
+    "damage": "AP",
+    "tank": false,
+    "healing": false,
+    "hardCC": false,
+    "shield": false
+  },
+  "vladimir": {
+    "damage": "AP",
+    "tank": false,
+    "healing": true,
+    "hardCC": false,
+    "shield": false
+  },
+  "volibear": {
+    "damage": "mixed",
+    "tank": true,
+    "healing": false,
+    "hardCC": true,
+    "shield": false
+  },
+  "warwick": {
+    "damage": "mixed",
+    "tank": false,
+    "healing": true,
+    "hardCC": true,
+    "shield": false
+  },
+  "wukong": {
+    "damage": "AD",
+    "tank": false,
+    "healing": false,
+    "hardCC": true,
+    "shield": false
+  },
+  "xayah": {
+    "damage": "AD",
+    "tank": false,
+    "healing": false,
+    "hardCC": false,
+    "shield": false
+  },
+  "xin-zhao": {
+    "damage": "AD",
+    "tank": false,
+    "healing": false,
+    "hardCC": true,
+    "shield": false
+  },
+  "yasuo": {
+    "damage": "AD",
+    "tank": false,
+    "healing": false,
+    "hardCC": false,
+    "shield": false
+  },
+  "yone": {
+    "damage": "mixed",
+    "tank": false,
+    "healing": false,
+    "hardCC": false,
+    "shield": false
+  },
+  "yuumi": {
+    "damage": "AD",
+    "tank": false,
+    "healing": true,
+    "hardCC": false,
+    "shield": false
+  },
+  "zed": {
+    "damage": "AD",
+    "tank": false,
+    "healing": false,
+    "hardCC": false,
+    "shield": false
+  },
+  "zeri": {
+    "damage": "AD",
+    "tank": false,
+    "healing": false,
+    "hardCC": false,
+    "shield": false
+  },
+  "ziggs": {
+    "damage": "AP",
+    "tank": false,
+    "healing": false,
+    "hardCC": false,
+    "shield": false
+  },
+  "zilean": {
+    "damage": "AP",
+    "tank": false,
+    "healing": false,
+    "hardCC": false,
+    "shield": false
+  },
+  "zoe": {
+    "damage": "AP",
+    "tank": false,
+    "healing": false,
+    "hardCC": true,
+    "shield": false
+  },
+  "zyra": {
+    "damage": "AP",
+    "tank": false,
+    "healing": false,
+    "hardCC": true,
+    "shield": false
+  }
+}

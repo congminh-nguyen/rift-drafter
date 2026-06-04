@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rift Drafter — Adaptive Wild Rift Team Builds</title>
+  <meta name="description" content="Enter both teams, get adaptive item / rune / boots / enchant builds for your whole team." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar__brand">
+      <span class="logo">⚔️</span>
+      <div>
+        <h1>Rift Drafter</h1>
+        <p class="tagline">Adaptive team builds — reacts to the exact 5v5</p>
+      </div>
+    </div>
+    <div class="topbar__meta" id="meta">
+      <span class="pill" id="patchPill">Patch —</span>
+      <span class="pill pill--muted" id="updatedPill">Updated —</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="teams">
+      <div class="team team--ally">
+        <h2><span class="dot dot--ally"></span> Your team</h2>
+        <div class="slots" id="allySlots"></div>
+      </div>
+      <div class="team team--enemy">
+        <h2><span class="dot dot--enemy"></span> Enemy team</h2>
+        <div class="slots" id="enemySlots"></div>
+      </div>
+    </section>
+
+    <section class="options">
+      <label>Rank
+        <select id="optRank">
+          <option value="">Any</option>
+          <option>Emerald</option><option>Diamond</option>
+          <option>Master</option><option>Grandmaster</option><option>Challenger</option>
+        </select>
+      </label>
+      <label>Game state
+        <select id="optState">
+          <option value="even">Even</option>
+          <option value="ahead">We're ahead</option>
+          <option value="behind">We're behind</option>
+        </select>
+      </label>
+      <div class="goals">
+        <span class="goals__label">Comp goals</span>
+        <div class="chips" id="goalChips"></div>
+      </div>
+      <div class="actions">
+        <button id="generateBtn" class="btn btn--primary">Generate builds</button>
+        <button id="sampleBtn" class="btn btn--ghost">Fill example</button>
+        <button id="clearBtn" class="btn btn--ghost">Clear</button>
+      </div>
+    </section>
+
+    <section id="summary" class="summary hidden">
+      <h2>Team-wide read</h2>
+      <ul id="summaryList"></ul>
+      <div class="enemy-traits" id="enemyTraits"></div>
+    </section>
+
+    <section id="results" class="results"></section>
+    <p id="emptyState" class="empty">Pick champions on both sides, then hit <strong>Generate builds</strong>.</p>
+  </main>
+
+  <footer class="foot">
+    <p>Build data scraped from <a href="https://wildriftcore.com" target="_blank" rel="noopener">WildRiftCore</a> for private team use. Adaptive layer + reasoning generated locally. Not affiliated with Riot Games or WildRiftCore.</p>
+  </footer>
+
+  <script src="engine.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
