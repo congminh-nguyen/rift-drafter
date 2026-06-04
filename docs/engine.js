@@ -16,11 +16,14 @@
 // "context" labels (e.g. "vs Healing", "vs Tanks", "vs Crowd Control").
 const CONTEXT_KEYWORDS = {
   healing: ["heal", "sustain", "lifesteal"],
-  tanky: ["tank", "bruiser", "health", "hp", "armor stack"],
+  tanky: ["tank", "bruiser", "armor stack"],
   cc: ["crowd control", "cc", "tenacity", "lockdown"],
   shield: ["shield"],
-  ap: ["ap", "magic", "mage", "burst"],
-  ad: ["ad ", "physical", "armor", "attack damage"],
+  // AP defense on WildRiftCore lives under "vs Ability Power".
+  ap: ["ability power", "vs ap", "heavy ap", "magic"],
+  // AD defense is split across crit / attack-speed / assassin threat cards
+  // (there is no single "vs AD" label on the source site).
+  ad: ["crit", "critical", "attack speed", "assassin", "ad/crit", "physical"],
 };
 
 // Generic fallback recommendations keyed by signal + your champion's damage type.
@@ -39,18 +42,28 @@ const FALLBACK = {
   cc: {
     any: { item: "Mercury's Treads (boots) or Quicksilver (enchant)", why: "Tenacity / cleanse to survive the enemy's heavy crowd control." },
   },
-  ap: {
-    any: { item: "Mercury's Treads + a Magic Resist item (Maw / Force of Nature)", why: "Enemy damage is mostly magic — stack MR on your vulnerable carries." },
-  },
-  ad: {
-    any: { item: "Plated Steelcaps + an Armor item (Randuin's / Frozen Heart)", why: "Enemy damage is mostly physical — stack armor on your vulnerable carries." },
-  },
   shield: {
     AD: { item: "Serpent's Fang", why: "Shreds enemy shields so your burst lands clean." },
     AP: { item: "Oceanid's Trident / anti-shield", why: "Breaks the enemy shields protecting their carries." },
     mixed: { item: "Serpent's Fang", why: "Anti-shield to negate enemy shielding." },
   },
 };
+
+// Concrete resist-item suggestion when a champion has no scraped defensive card.
+// Mirrors WildRiftCore granularity: magic resist vs AP, armor vs AD, tailored to
+// the champion's own role (tank / AP carry / AD carry).
+function damageDefenseFallback(signalKey, myTrait) {
+  const tank = !!myTrait.tank;
+  if (signalKey === "ap") {
+    if (tank) return { item: "Force of Nature / Spirit Visage (+ Mercury's Treads)", why: "magic resist + sustain to front the enemy AP damage." };
+    if (myTrait.damage === "AP") return { item: "Mercury's Treads + Crown of the Shattered Queen", why: "tenacity + burst protection vs enemy magic damage." };
+    return { item: "Maw of Malmortius (+ Mercury's Treads)", why: "magic resist and a lifeline shield against magic burst." };
+  }
+  // ad
+  if (tank) return { item: "Randuin's Omen / Frozen Heart (+ Plated Steelcaps)", why: "armor + crit/attack-speed mitigation vs the enemy AD." };
+  if (myTrait.damage === "AP") return { item: "Zhonya's Hourglass / Stasis enchant (+ Plated Steelcaps)", why: "armor and a stasis window vs AD divers/assassins." };
+  return { item: "Plated Steelcaps + Guardian Angel / Randuin's Omen", why: "armor and a safety net vs the enemy physical damage." };
+}
 
 function imgURL(src) {
   if (!src) return "";
@@ -94,8 +107,8 @@ function analyzeTeam(slugs, traits) {
     tanky: a.tank >= 2,
     cc: a.cc >= 3,                   // a genuinely CC-heavy comp
     shield: a.shield >= 1,
-    apHeavy: apShare >= 3 && apShare > adShare,
-    adHeavy: adShare >= 3 && adShare > apShare,
+    apHeavy: apShare >= 2.5 && apShare > adShare,
+    adHeavy: adShare >= 2.5 && adShare > apShare,
   };
   return a;
 }
@@ -153,10 +166,27 @@ function recommendForChampion(champ, traits, enemy, ally, options) {
   if (enemy.signals.shield) {
     consider("shield", `Enemy shields carries (${enemy.shielders.map(prettySlug).join(", ")})`, "shield");
   }
-  // Resist guidance applies mainly to squishy/carry champs.
-  const squishy = !(traits[champ.slug] && traits[champ.slug].tank);
-  if (squishy && enemy.signals.apHeavy) consider("ap", "Enemy damage is mostly magic", "ap");
-  if (squishy && enemy.signals.adHeavy) consider("ad", "Enemy damage is mostly physical", "ad");
+  // Damage-type defense — applies to every champion. Surface the champion's own
+  // scraped resist items first; otherwise give a concrete role-aware fallback.
+  const apThreats = enemy.ap + enemy.mixed;
+  const adThreats = enemy.ad + enemy.mixed;
+  const addDamageDefense = (isActive, keywordKey, label) => {
+    if (!isActive) return;
+    signalsAddressed++;
+    const matches = matchSituational(champ, keywordKey);
+    if (matches.length) {
+      for (const m of matches) {
+        if (usedContexts.has(m.context)) continue;
+        usedContexts.add(m.context);
+        activeSituational.push({ ...m, trigger: label });
+      }
+    } else {
+      const fb = damageDefenseFallback(keywordKey, myTrait);
+      reasons.push(`${label}: consider ${fb.item} — ${fb.why}`);
+    }
+  };
+  addDamageDefense(enemy.signals.apHeavy, "ap", `Enemy is AP-heavy (${apThreats} magic threats)`);
+  addDamageDefense(enemy.signals.adHeavy, "ad", `Enemy is AD-heavy (${adThreats} physical threats)`);
 
   // Matchup-wall intel: does this ally directly counter or get countered by an enemy?
   // If a lane is assigned, prefer matchups in that lane (more relevant).

@@ -17,9 +17,11 @@
 
   async function boot() {
     try {
+      // Cache-bust so the daily-refreshed data is always picked up.
+      const bust = "?t=" + Date.now();
       const [champs, traits] = await Promise.all([
-        fetch("data/champions.json").then((r) => r.json()),
-        fetch("data/traits.json").then((r) => r.json()),
+        fetch("data/champions.json" + bust).then((r) => r.json()),
+        fetch("data/traits.json" + bust).then((r) => r.json()),
       ]);
       DB = champs;
       TRAITS = traits;
